@@ -12,7 +12,7 @@ const config = {
     parent: "phaser-container",
     width: 960,
     height: 540,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#5gjue2e",
     pixelArt: true,
     roundPixel: false,
     max: {
