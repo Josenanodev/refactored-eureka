@@ -8,7 +8,7 @@ export class MainScene extends Scene {
     cursors = null;
 
     points = 0;
-    game_over_timeout = 20;
+    game_over_timeout = 10000;
 
     constructor() {
         super("MainScene");
@@ -20,7 +20,7 @@ export class MainScene extends Scene {
 
         // Reset points
         this.points = 0;
-        this.game_over_timeout = 20;
+        this.game_over_timeout = 10000;
     }
 
     create() {
@@ -100,6 +100,12 @@ export class MainScene extends Scene {
         }
         if (this.cursors.down.isDown) {
             this.player.move("down");
+        }
+        if (this.cursors.right.isDown) {
+            this.player.move("right")
+        }
+        if (this.cursors.left.isDown) {
+            this.player.move("left")
         }
 
     }
